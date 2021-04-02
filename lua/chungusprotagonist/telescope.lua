@@ -4,11 +4,12 @@ local M = {}
 M.search_dotfiles = function() 
     require("telescope.builtin").find_files({
         prompt_title = "< VimRC >",
-        cwd = "$HOME/dotfiles/chungus-protagonist/",
+        cwd = "$HOME/.dotfiles/chungus-protagonist/",
     })
 end
 
 function set_background(content) 
+    -- HERE we can run bash script to apple script
     vim.fn.system(
         "dconf write /org/mate/desktop/background/picture-filename \"'" .. content .. "'\"")
 end

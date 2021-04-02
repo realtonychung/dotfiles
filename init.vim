@@ -5,7 +5,7 @@ let g:netrw_localrmdir='rm -r'
 let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 
 set exrc
-set guicursor=
+set guicursor=n-c-v:block-nCursor
 set relativenumber
 set nu
 set nohlsearch
